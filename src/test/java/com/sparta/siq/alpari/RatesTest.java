@@ -7,11 +7,12 @@ import org.junit.Test;
 public class RatesTest {
 
     private String filepath = "rates.json";
+    private RatesFileReader ratesFileReader;
 
     @Before
     public void CreateTestFile()
     {
-        RatesFileReader ratesFileReader = new RatesFileReader(filepath);
+        ratesFileReader = new RatesFileReader(filepath);
         //Assert.assertEquals(ratesFileReader.getRatesFile(),ratesFileReader);
 
     }
